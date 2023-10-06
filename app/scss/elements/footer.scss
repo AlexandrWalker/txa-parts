@@ -1,0 +1,66 @@
+.footer {
+  padding: 55px 0;
+  background: #f5f5f5;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__content {
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 30px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__item {
+    font-style: normal;
+    font-family: FjallaOne, sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #3d4246;
+
+    width: calc(25% - 15px);
+
+    &-title {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    &-text {
+      font-size: 14px;
+      margin-bottom: 17.5px;
+    }
+
+    &-email {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      color: #3d4246;
+      line-height: 1.5;
+    }
+
+    a {
+      color: #3d4246;
+    }
+  }
+
+  &__copyright {
+    font-size: 12px;
+    line-height: 1.2;
+    color: #3d4246;
+
+    &-text {}
+
+    &-link {
+      color: #3d4246;
+      text-decoration: none;
+    }
+  }
+}

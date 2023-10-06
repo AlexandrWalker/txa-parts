@@ -1,0 +1,42 @@
+.product {
+  padding-top: 55px;
+  margin-bottom: 110px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 82.5px;
+  }
+
+  &__content {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__img {
+    width: 530px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  &__name {
+    font-size: 36px;
+  }
+
+  &__desc {
+    color: #69727b;
+  }
+
+  .btn--back {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0 auto;
+  }
+}
