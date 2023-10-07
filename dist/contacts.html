@@ -43,7 +43,7 @@
                   </ul>
                 </button>
               </li>
-              <li class="nav__item"><a href="/txa-parts/contact" class="nav__item-link">Контакты</a></li>
+              <li class="nav__item"><a href="#!" class="nav__item-link">Контакты</a></li>
               <li class="nav__item">
                 <button class="nav__item-link nav__btn" type="button">Политика
                   <img class="arrow" src="images/arrow.svg" alt="arrow">
@@ -68,20 +68,30 @@
 
 </svg>
 <main class="main">
-  <div class="product">
+  <div class="contact">
     <div class="container">
-      <div class="product__inner">
-        <div class="product__content">
-          <img class="product__img" src="https://via.placeholder.com/530x534" alt="product-image">
-          <div class="product__body">
-            <h3 class="product__name">Engine Piston For Caterpillar C12 H-1442948</h3>
-            <p class="product__desc">Engine Piston For Caterpillar C12 H-1442948</p>
-          </div>
-        </div>
-        <a class="btn btn--back" onclick="javascript:history.back(); return false;">
-          <img src="images/back.svg" alt="back" class="arrow-back">
-          Вернуться к запасным частям
-        </a>
+      <div class="contact__inner">
+        <h2 class="contact__title">
+          Если у вас есть общие вопросы или чтобы стать клиентом TXA, заполните форму ниже.
+        </h2>
+        <form method="post" action="" class="contact-form">
+
+          <label for="ContactForm-name">Name</label>
+          <input type="text" id="ContactForm-name" name="contact[name]" value="">
+
+          <label for="ContactForm-email">Email <span aria-hidden="true">*</span></label>
+          <input type="email" id="ContactForm-email" name="contact[email]" autocorrect="off" autocapitalize="none"
+            value="" aria-required="true">
+
+          <label for="ContactForm-phone">Phone Number</label>
+          <input type="tel" id="ContactForm-phone" name="contact[phone]" pattern="[0-9\-]*" value="">
+
+          <label for="ContactForm-message">Message</label>
+          <textarea rows="10" id="ContactForm-message" name="contact[body]"></textarea>
+
+          <input type="submit" class="btn" value="Send">
+
+        </form>
       </div>
     </div>
   </div>
