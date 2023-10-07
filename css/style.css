@@ -237,8 +237,20 @@ li {
   transition: all 0.2s ease 0s;
   padding: 10px;
   width: auto;
+  background: #fff;
   position: absolute;
-  top: 100%;
+  top: 120%;
+  z-index: 10;
+}
+.nav__dropdown-item {
+  white-space: nowrap;
+  margin-bottom: 10px;
+}
+.nav__dropdown-item:last-child {
+  margin-bottom: 0;
+}
+.nav__dropdown-item:hover {
+  text-decoration: underline;
 }
 
 .footer {
