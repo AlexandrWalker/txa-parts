@@ -35,12 +35,13 @@
     gap: 22px;
   }
 
-  &__item {
+  &__item a {
     display: flex;
     align-items: center;
     gap: 35px;
     padding-bottom: 22px;
     border-bottom: 1px solid #e8e9eb;
+    cursor: pointer;
 
     &:hover .collection__item-img {
       opacity: 0.8;

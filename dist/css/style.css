@@ -426,17 +426,18 @@ li {
   flex-direction: column;
   gap: 22px;
 }
-.collection__item {
+.collection__item a {
   display: flex;
   align-items: center;
   gap: 35px;
   padding-bottom: 22px;
   border-bottom: 1px solid #e8e9eb;
+  cursor: pointer;
 }
-.collection__item:hover .collection__item-img {
+.collection__item a:hover .collection__item-img {
   opacity: 0.8;
 }
-.collection__item:hover .collection__item-name {
+.collection__item a:hover .collection__item-name {
   border-bottom: 1px solid #3d4246;
 }
 .collection__item-img {
