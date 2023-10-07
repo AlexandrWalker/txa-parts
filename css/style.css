@@ -433,6 +433,7 @@ li {
   padding-bottom: 22px;
   border-bottom: 1px solid #e8e9eb;
   cursor: pointer;
+  color: inherit;
 }
 .collection__item a:hover .collection__item-img {
   opacity: 0.8;
