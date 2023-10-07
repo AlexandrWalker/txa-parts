@@ -22,13 +22,16 @@
     align-items: center;
   }
 
-  &__item {}
+  &__item {
+    position: relative;
+  }
 
   &__item-link {
     display: flex;
     align-items: center;
     gap: 5px;
     position: relative;
+    background: transparent;
 
     font-size: 16px;
     font-style: normal;
@@ -41,19 +44,19 @@
     .arrow {
       transition: all 0.2s ease 0s;
     }
-
-    &:hover .arrow {
-      transform: scale(1, -1);
-    }
-
-    &:hover .nav__dropdown-list {
-      opacity: 1;
-      pointer-events: all;
-    }
   }
 
   &__item-link.active {
     text-decoration: underline;
+
+    .arrow {
+      transform: scale(1, -1);
+    }
+
+    .nav__dropdown-list {
+      opacity: 1;
+      pointer-events: all;
+    }
   }
 
   &__dropdown-list {
@@ -61,6 +64,7 @@
     opacity: 0;
     border: 1px solid #e8e9eb;
     transition: all 0.2s ease 0s;
+    text-align: left;
 
     padding: 10px;
     width: auto;
@@ -82,5 +86,9 @@
     &:hover {
       text-decoration: underline;
     }
+  }
+
+  &__dropdown-link {
+    color: inherit;
   }
 }

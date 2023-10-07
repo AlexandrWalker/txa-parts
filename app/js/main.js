@@ -14,5 +14,19 @@
       },
     });
 
+    (function () {
+      var navBtn = document.querySelectorAll('.nav__btn'),
+        active = document.getElementsByClassName('active');
+
+      Array.from(navBtn).forEach(function (item, i, navBtn) {
+        item.addEventListener('click', function (e) {
+          if (active.length > 0 && active[0] !== this)
+            active[0].classList.remove('active');
+
+          this.classList.toggle('active');
+        });
+      });
+    })();
+
   });
 })();

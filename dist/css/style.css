@@ -212,11 +212,15 @@ li {
   justify-content: center;
   align-items: center;
 }
+.nav__item {
+  position: relative;
+}
 .nav__item-link {
   display: flex;
   align-items: center;
   gap: 5px;
   position: relative;
+  background: transparent;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -227,21 +231,22 @@ li {
 .nav__item-link .arrow {
   transition: all 0.2s ease 0s;
 }
-.nav__item-link:hover .arrow {
-  transform: scale(1, -1);
-}
-.nav__item-link:hover .nav__dropdown-list {
-  opacity: 1;
-  pointer-events: all;
-}
 .nav__item-link.active {
   text-decoration: underline;
+}
+.nav__item-link.active .arrow {
+  transform: scale(1, -1);
+}
+.nav__item-link.active .nav__dropdown-list {
+  opacity: 1;
+  pointer-events: all;
 }
 .nav__dropdown-list {
   pointer-events: none;
   opacity: 0;
   border: 1px solid #e8e9eb;
   transition: all 0.2s ease 0s;
+  text-align: left;
   padding: 10px;
   width: auto;
   background: #fff;
@@ -258,6 +263,9 @@ li {
 }
 .nav__dropdown-item:hover {
   text-decoration: underline;
+}
+.nav__dropdown-link {
+  color: inherit;
 }
 
 .footer {
@@ -385,10 +393,6 @@ li {
   width: 545px;
   height: auto;
   object-fit: cover;
-}
-
-.nav__item:first-child .nav__item-link {
-  text-decoration: underline;
 }
 
 .collection-hero {
