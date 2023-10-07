@@ -1,3 +1,7 @@
+.nav__item:first-child .nav__item-link {
+  text-decoration: underline;
+}
+
 .collection-hero {
   padding-top: 55px;
   margin-bottom: 110px;
@@ -15,7 +19,7 @@
   &__title {
     color: #fff;
     text-align: center;
-    font-family: FjallaOne;
+    font-family: Oswald;
     font-size: 32px;
     position: absolute;
     top: 50%;

@@ -13,11 +13,11 @@
     left: 50%;
     transform: translate(-50%, -50%) translateY(100px);
     opacity: 0;
-    transition: all 0.5s ease 0s;
+    transition: all 0.7s ease 0s;
     width: fit-content;
 
     text-align: center;
-    font-family: FjallaOne;
+    font-family: Oswald;
     color: #fff;
 
     display: flex;
@@ -32,7 +32,7 @@
   }
 
   &__title {
-    font-family: FjallaOne;
+    font-family: Oswald;
     font-size: 40px;
     text-shadow: 0 0 4px rgba(0, 0, 0, .4);
   }

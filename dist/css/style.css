@@ -47,6 +47,13 @@
   font-display: swap;
   font-style: italic;
 }
+@font-face {
+  font-family: Oswald;
+  src: url(../fonts/Oswald-Regular.woff2), url(../fonts/Oswald-Regular.woff);
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
 * {
   padding: 0;
   margin: 0;
@@ -273,29 +280,31 @@ li {
 }
 .footer__item {
   font-style: normal;
-  font-family: FjallaOne, sans-serif;
+  font-family: Oswald, sans-serif;
   font-weight: 400;
   line-height: 1.2;
   color: #3d4246;
   width: calc(25% - 15px);
 }
 .footer__item-title {
-  font-size: 18px;
-  margin-bottom: 25px;
+  font-size: 22px;
+  margin-bottom: 10px;
 }
 .footer__item-text {
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 17.5px;
 }
-.footer__item-email {
-  font-size: 16px;
+.footer__item-link {
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   color: #3d4246;
   line-height: 1.5;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
 }
-.footer__item a {
-  color: #3d4246;
+.footer__item-link:hover {
+  color: #de1604;
 }
 .footer__copyright {
   font-size: 12px;
@@ -321,10 +330,10 @@ li {
   left: 50%;
   transform: translate(-50%, -50%) translateY(100px);
   opacity: 0;
-  transition: all 0.5s ease 0s;
+  transition: all 0.7s ease 0s;
   width: fit-content;
   text-align: center;
-  font-family: FjallaOne;
+  font-family: Oswald;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -336,7 +345,7 @@ li {
   transform: translate(-50%, -50%) translateY(0px);
 }
 .hero__title {
-  font-family: FjallaOne;
+  font-family: Oswald;
   font-size: 40px;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
 }
@@ -378,6 +387,10 @@ li {
   object-fit: cover;
 }
 
+.nav__item:first-child .nav__item-link {
+  text-decoration: underline;
+}
+
 .collection-hero {
   padding-top: 55px;
   margin-bottom: 110px;
@@ -393,7 +406,7 @@ li {
 .collection-hero__title {
   color: #fff;
   text-align: center;
-  font-family: FjallaOne;
+  font-family: Oswald;
   font-size: 32px;
   position: absolute;
   top: 50%;
