@@ -28,5 +28,11 @@
       });
     })();
 
+    (function () {
+      var obj = document.querySelectorAll(".collection__item");
+      var quantity = document.querySelector(".quantity");
+      quantity.innerHTML = obj.length;
+    })();
+
   });
 })();

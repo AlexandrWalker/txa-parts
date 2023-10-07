@@ -1,0 +1,18 @@
+.privacy-policy {
+  padding: 55px 0;
+
+  &__inner {}
+
+  &__title {
+    font-size: 36px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 55px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
