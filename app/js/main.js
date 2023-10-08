@@ -29,6 +29,16 @@
     })();
 
     (function () {
+      let burgerBtn = document.getElementById('burger');
+      let nav = document.getElementById('nav');
+
+      burgerBtn.onclick = function () {
+        burgerBtn.classList.toggle('active');
+        nav.classList.toggle('active');
+      };
+    })();
+
+    (function () {
       var obj = document.querySelectorAll(".collection__item");
       var quantity = document.querySelector(".quantity");
       quantity.innerHTML = obj.length;
