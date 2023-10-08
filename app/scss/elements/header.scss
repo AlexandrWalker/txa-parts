@@ -48,6 +48,7 @@
     line-height: 1.5;
     color: #3d4246;
 
+    transition: all 0.2s ease 0s;
     text-transform: uppercase;
 
     .arrow {
@@ -74,6 +75,7 @@
     border: 1px solid #e8e9eb;
     transition: all 0.2s ease 0s;
     text-align: left;
+    font-size: 16px;
 
     padding: 10px;
     width: auto;
@@ -102,7 +104,7 @@
   }
 }
 
-.nav.active .nav__list {
+.nav._active .nav__list {
   max-height: 100%;
 }
 
@@ -147,7 +149,7 @@
   }
 }
 
-.burger.active {
+.burger._active {
 
   .burger__item {
     width: 0;

@@ -33,11 +33,43 @@
     background: #fff;
     grid-column: 1/3;
     grid-row: 2/3;
+    overflow: hidden;
   }
 
   .nav__list {
     max-height: 0;
-    overflow: hidden;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav__item {
+    width: 100%;
+  }
+
+  .nav__item-link {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .nav__item-link .arrow {
+    transform: rotate(-90deg);
+    margin-top: 9px;
+  }
+
+  .nav__item-link.active {
+    font-size: 0;
+  }
+
+  .nav__item-link.active .arrow {
+    transform: rotate(90deg);
+  }
+
+  .nav__dropdown-list {
+    border: none;
+  }
+
+  .nav__item-link.active .nav__dropdown-list {
+    position: relative;
   }
 
   .hero {
@@ -55,5 +87,30 @@
   .product__content {
     flex-direction: column;
     align-items: center;
+  }
+
+  .contact__inner {
+    width: 100%;
+  }
+
+  .contact__form-name {
+    grid-column: 1/3;
+  }
+
+  .contact__form-email {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+
+  .contact__form-phone {
+    grid-row: 3/4;
+  }
+
+  .contact__form-message {
+    grid-row: 4/5;
+  }
+
+  .contact__form-btn {
+    grid-row: 5/6;
   }
 }
