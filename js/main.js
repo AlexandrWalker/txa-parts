@@ -33,9 +33,9 @@
       let nav = document.getElementById('nav');
 
       burgerBtn.onclick = function () {
-        burgerBtn.classList.toggle('active');
-        nav.classList.toggle('active');
-      }; 
+        burgerBtn.classList.toggle('_active');
+        nav.classList.toggle('_active');
+      };
     })();
 
     (function () {
