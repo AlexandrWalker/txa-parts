@@ -35,7 +35,7 @@
       burgerBtn.onclick = function () {
         burgerBtn.classList.toggle('active');
         nav.classList.toggle('active');
-      };
+      }; 
     })();
 
     (function () {
