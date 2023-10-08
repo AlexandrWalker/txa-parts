@@ -58,6 +58,10 @@
     &:hover .collection__item-name {
       border-bottom: 1px solid #3d4246;
     }
+
+    &:last-child {
+      border-bottom: none;
+    }
   }
 
   &__item-img {

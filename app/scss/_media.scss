@@ -37,6 +37,7 @@
 
   .nav__list {
     max-height: 0;
+    overflow: hidden;
   }
 
   .hero {
@@ -45,5 +46,14 @@
 
   .footer__item {
     width: 100%;
+  }
+
+  .product {
+    margin-bottom: 55px;
+  }
+
+  .product__content {
+    flex-direction: column;
+    align-items: center;
   }
 }

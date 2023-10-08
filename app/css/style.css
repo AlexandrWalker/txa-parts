@@ -506,6 +506,9 @@ li {
 .collection__item a:hover .collection__item-name {
   border-bottom: 1px solid #3d4246;
 }
+.collection__item a:last-child {
+  border-bottom: none;
+}
 .collection__item-img {
   width: 95px;
   height: auto;
@@ -676,11 +679,19 @@ li {
   }
   .nav__list {
     max-height: 0;
+    overflow: hidden;
   }
   .hero {
     padding: 0;
   }
   .footer__item {
     width: 100%;
+  }
+  .product {
+    margin-bottom: 55px;
+  }
+  .product__content {
+    flex-direction: column;
+    align-items: center;
   }
 }
