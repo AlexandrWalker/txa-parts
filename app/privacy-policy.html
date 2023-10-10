@@ -16,13 +16,15 @@
     <header class="header">
       <div class="header__inner">
         <a class="logo" href="/txa-parts">
-          <img src="images/logo2_1_180x.avif" alt="logo" class="logo__img">
+          <img src="images/logo.svg" alt="logo" class="logo__img">
         </a>
         <nav class="nav" id="nav">
           <ul class="nav__list">
             <li class="nav__item">
               <button class="nav__item-link nav__btn" type="button">Продукт
-                <img class="arrow" src="images/arrow.svg" alt="arrow">
+                <svg class="arrow">
+                  <use xlink:href="#arrow"></use>
+                </svg>
                 <ul class="nav__dropdown-list">
                   <li class="nav__dropdown-item">
                     <a class="nav__dropdown-link" href="/txa-parts/collection_Caterpillar">
@@ -45,7 +47,9 @@
             <li class="nav__item"><a href="/txa-parts/contact" class="nav__item-link">Контакты</a></li>
             <li class="nav__item">
               <button class="nav__item-link nav__btn" type="button">Политика
-                <img class="arrow" src="images/arrow.svg" alt="arrow">
+                <svg class="arrow">
+                  <use xlink:href="#arrow"></use>
+                </svg>
                 <ul class="nav__dropdown-list">
                   <li class="nav__dropdown-item">
                     <a class="nav__dropdown-link" href="/txa-parts/privacy-policy">
@@ -68,7 +72,14 @@
       </div>
     </header>
 <svg style="display: none;">
-
+  <symbol id="arrow" aria-hidden="true" focusable="false" role="presentation" viewBox="0 0 498.98 284.49"
+    xmlns="http://www.w3.org/2000/svg" width="8px" height="8px">
+    <g>
+      <path
+        d="M80.93 271.76A35 35 0 0 1 140.68 247l189.74 189.75L520.16 247a35 35 0 1 1 49.5 49.5L355.17 511a35 35 0 0 1-49.5 0L91.18 296.5a34.89 34.89 0 0 1-10.25-24.74z"
+        transform="translate(-80.93 -236.76)"></path>
+    </g>
+  </symbol>
 </svg>
 <main class="main">
   <div class="privacy-policy">

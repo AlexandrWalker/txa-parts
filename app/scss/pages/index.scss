@@ -76,7 +76,8 @@
   }
 
   &__img {
-    width: 545px;
+    max-width: 545px;
+    width: 100%;
     height: auto;
     object-fit: cover;
   }

@@ -204,11 +204,13 @@ li {
 }
 
 .logo {
-  width: fit-content;
+  max-width: 215px;
+  width: 100%;
+  height: auto;
 }
 .logo__img {
-  width: 215px;
-  height: auto;
+  width: 100%;
+  height: 100%;
 }
 
 .nav__list {
@@ -216,7 +218,7 @@ li {
   gap: 20px;
   justify-content: center;
   align-items: center;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out-in-out;
 }
 .nav__item {
   position: relative;
@@ -232,17 +234,33 @@ li {
   font-weight: 400;
   line-height: 1.5;
   color: #3d4246;
-  transition: all 0.2s ease 0s;
+  transition: all 0.2s ease-in-out 0s;
   text-transform: uppercase;
+  padding: 5px 10px;
+  border: 1px solid #001668;
+  border-radius: 20px;
 }
 .nav__item-link .arrow {
-  transition: all 0.2s ease 0s;
+  transition: all 0.2s ease-in-out 0s;
+  fill: #231f20;
+  width: 8px;
+  height: 8px;
+}
+.nav__item-link:hover {
+  background-color: #001668;
+  color: #fff;
+}
+.nav__item-link:hover .arrow {
+  fill: #fff;
 }
 .nav__item-link.active {
   text-decoration: underline;
+  background-color: #001668;
+  color: #fff;
 }
 .nav__item-link.active .arrow {
   transform: scale(1, -1);
+  fill: #fff;
 }
 .nav__item-link.active .nav__dropdown-list {
   opacity: 1;
@@ -252,7 +270,7 @@ li {
   pointer-events: none;
   opacity: 0;
   border: 1px solid #e8e9eb;
-  transition: all 0.2s ease 0s;
+  transition: all 0.2s ease-in-out 0s;
   text-align: left;
   font-size: 16px;
   padding: 10px;
@@ -273,11 +291,20 @@ li {
   text-decoration: underline;
 }
 .nav__dropdown-link {
-  color: inherit;
+  color: #3d4246;
+}
+.nav__dropdown-link:hover {
+  text-decoration: underline;
+}
+
+.nav._active {
+  padding-top: 20px;
+  transition: all 0.2s ease-in-out 0s;
 }
 
 .nav._active .nav__list {
   max-height: 100%;
+  transition: all 0.2s ease-in-out 0s;
 }
 
 .burger {
@@ -295,7 +322,7 @@ li {
   height: 2px;
   background: #000;
   position: relative;
-  transition: all 0.2s ease 0s;
+  transition: all 0.2s ease-in-out 0s;
 }
 .burger__item::before {
   content: "";
@@ -305,7 +332,7 @@ li {
   position: absolute;
   top: -10px;
   left: 0;
-  transition: all 0.2s ease 0s;
+  transition: all 0.2s ease-in-out 0s;
 }
 .burger__item::after {
   content: "";
@@ -315,7 +342,7 @@ li {
   position: absolute;
   top: 10px;
   left: 0;
-  transition: all 0.2s ease 0s;
+  transition: all 0.2s ease-in-out 0s;
 }
 
 .burger._active .burger__item {
@@ -362,6 +389,9 @@ li {
 .footer__item-text {
   font-size: 18px;
   margin-bottom: 17.5px;
+}
+.footer__item-text:last-child {
+  margin-bottom: 0;
 }
 .footer__item-link {
   font-size: 18px;
@@ -451,7 +481,8 @@ li {
   color: #69727b;
 }
 .quality__img {
-  width: 545px;
+  max-width: 545px;
+  width: 100%;
   height: auto;
   object-fit: cover;
 }
@@ -534,7 +565,8 @@ li {
   gap: 30px;
 }
 .product__img {
-  width: 530px;
+  max-width: 530px;
+  width: 100%;
   height: auto;
   object-fit: cover;
 }
@@ -653,18 +685,29 @@ li {
   .quality__inner {
     flex-direction: column-reverse;
   }
+  .product__name {
+    font-size: 24px;
+  }
+  .product__body {
+    gap: 30px;
+  }
   .footer__list {
     flex-wrap: wrap;
+    gap: 30px;
   }
   .footer__item {
     width: calc(50% - 10px);
   }
 }
 @media (max-width: 660px) {
+  .container {
+    padding: 0 15px;
+  }
   .header__inner {
     display: grid;
     grid-template-columns: 1fr auto;
     gap: 0 40px;
+    padding: 0 15px;
   }
   .logo {
     grid-column: 1/2;
@@ -698,18 +741,30 @@ li {
   }
   .nav__item-link.active {
     font-size: 0;
+    background: transparent;
+    border: 0;
   }
   .nav__item-link.active .arrow {
     transform: rotate(90deg);
+    fill: #231f20;
+    min-width: 8px;
+    margin-top: 18px;
   }
   .nav__dropdown-list {
     border: none;
+    padding: 0 10px;
   }
   .nav__item-link.active .nav__dropdown-list {
     position: relative;
   }
+  .nav__dropdown-item {
+    white-space: normal;
+  }
   .hero {
-    padding: 0;
+    padding: 30px 0 0;
+  }
+  .footer {
+    padding: 30px 0;
   }
   .footer__item {
     width: 100%;
@@ -739,5 +794,15 @@ li {
   }
   .contact__form-btn {
     grid-row: 5/6;
+  }
+  .collection-hero {
+    margin-bottom: 55px;
+    padding-top: 30px;
+  }
+  .collection {
+    margin-bottom: 55px;
+  }
+  .product__inner {
+    gap: 40px;
   }
 }

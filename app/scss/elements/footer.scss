@@ -35,6 +35,10 @@
     &-text {
       font-size: 18px;
       margin-bottom: 17.5px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
     &-link {
