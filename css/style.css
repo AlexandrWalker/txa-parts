@@ -1,51 +1,52 @@
+@charset "UTF-8";
 @font-face {
-  font-family: HelveticaNeueCyr;
-  src: url(../fonts/HelveticaNeueCyr-Roman.woff2), url(../fonts/HelveticaNeueCyr-Regular.woff);
+  font-family: Tilda-Sans;
+  src: url(../fonts/tilda-sans_light.woff2), url(../fonts/tilda-sans_light.woff);
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: Tilda-Sans;
+  src: url(../fonts/tilda-sans_regular.woff2), url(../fonts/tilda-sans_regular.woff);
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: HelveticaNeueCyr;
-  src: url(../fonts/HelveticaNeueCyr-Medium.woff2), url(../fonts/HelveticaNeueCyr-Medium.woff);
+  font-family: Tilda-Sans;
+  src: url(../fonts/tilda-sans_medium.woff2), url(../fonts/tilda-sans_medium.woff);
   font-weight: 500;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: HelveticaNeueCyr;
-  src: url(../fonts/HelveticaNeueCyr-SemiBold.woff2), url(../fonts/HelveticaNeueCyr-SemiBold.woff);
+  font-family: Tilda-Sans;
+  src: url(../fonts/tilda-sans_semibold.woff2), url(../fonts/tilda-sans_semibold.woff);
   font-weight: 600;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: HelveticaNeueCyr;
-  src: url(../fonts/HelveticaNeueCyr-Bold.woff2), url(../fonts/HelveticaNeueCyr-Bold.woff);
+  font-family: Tilda-Sans;
+  src: url(../fonts/tilda-sans_bold.woff2), url(../fonts/tilda-sans_bold.woff);
   font-weight: 700;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: HelveticaNeueCyr;
-  src: url(../fonts/HelveticaNeueCyr-Black.woff2), url(../fonts/HelveticaNeueCyr-Black.woff);
-  font-weight: 700;
+  font-family: Tilda-Sans;
+  src: url(../fonts/tilda-sans_extra-bold.woff2), url(../fonts/tilda-sans_extra-bold.woff);
+  font-weight: 800;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: FjallaOne;
-  src: url(../fonts/FjallaOne-Regular.woff2), url(../fonts/FjallaOne-Regular.woff);
-  font-weight: 400;
+  font-family: Tilda-Sans;
+  src: url(../fonts/tilda-sans_black.woff2), url(../fonts/tilda-sans_black.woff);
+  font-weight: 900;
   font-display: swap;
-  font-style: italic;
-}
-@font-face {
-  font-family: Oswald;
-  src: url(../fonts/Oswald-Regular.woff2), url(../fonts/Oswald-Regular.woff);
-  font-weight: 400;
-  font-display: swap;
-  font-style: italic;
+  font-style: normal;
 }
 * {
   padding: 0;
@@ -123,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
   overflow-x: hidden;
   min-width: 320px;
-  font-family: HelveticaNeueCyr, sans-serif;
+  font-family: Tilda-Sans, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -179,7 +180,6 @@ li {
   cursor: pointer;
   border: 1px solid #436076;
   border-radius: 2px;
-  font-family: FjallaOne, sans-serif;
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
@@ -220,6 +220,18 @@ li {
   background-color: #001668;
   border-color: #001668;
   color: white;
+}
+
+.glass {
+  width: 175px;
+  height: 175px;
+  position: absolute;
+  cursor: crosshair;
+  border-radius: 50%;
+  /* Создание эффекта стекла */
+  box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85), 0 0 7px 7px rgba(0, 0, 0, 0.25), inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+  /* Изначально скрыто */
+  display: none;
 }
 
 .header {
@@ -464,7 +476,6 @@ li {
   transition: all 0.7s ease 0s;
   width: fit-content;
   text-align: center;
-  font-family: Oswald;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -476,7 +487,6 @@ li {
   transform: translate(-50%, -50%) translateY(0px);
 }
 .hero__title {
-  font-family: Oswald;
   font-size: 40px;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
 }
@@ -534,7 +544,6 @@ li {
 .collection-hero__title {
   color: #fff;
   text-align: center;
-  font-family: Oswald;
   font-size: 32px;
   position: absolute;
   top: 50%;
@@ -596,11 +605,29 @@ li {
   display: flex;
   gap: 30px;
 }
+.product__images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .product__img {
   max-width: 530px;
   width: 100%;
   height: auto;
   object-fit: cover;
+}
+.product__images-list {
+  display: flex;
+  gap: 30px;
+}
+.product__images-item {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border: 2px solid transparent;
+}
+.product__images-item.active {
+  border-color: #3d4246;
 }
 .product__body {
   display: flex;
