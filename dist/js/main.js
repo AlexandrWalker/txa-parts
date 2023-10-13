@@ -51,6 +51,13 @@
     createPageButtons();
     showPage(currentPage);
 
+    $("[href^='#']").click(function () {
+      var idtop = $($(this).attr("href")).offset().top;
+      $('html,body').animate(
+        { scrollTop: idtop }, 500);
+      return false;
+    });
+
     var swiper = new Swiper(".hero-slider", {
       spaceBetween: 30,
       centeredSlides: true,
@@ -66,12 +73,12 @@
 
     (function () {
       var navBtn = document.querySelectorAll('.nav__btn'),
-        active = document.getElementsByClassName('active');
+        navActive = document.getElementsByClassName('active');
 
       Array.from(navBtn).forEach(function (item, i, navBtn) {
         item.addEventListener('click', function (e) {
-          if (active.length > 0 && active[0] !== this)
-            active[0].classList.remove('active');
+          if (navActive.length > 0 && navActive[0] !== this)
+            navActive[0].classList.remove('active');
 
           this.classList.toggle('active');
         });
