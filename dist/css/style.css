@@ -120,6 +120,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
   min-width: 320px;
@@ -188,6 +192,38 @@ li {
 
 .swiper-pagination-bullet-active {
   background: #fff;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination a {
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  outline: 1px solid #436076;
+  border-radius: 1px;
+  border: none;
+  background: transparent;
+  color: inherit;
+}
+
+.hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.pagination a.active {
+  background-color: #001668;
+  border-color: #001668;
+  color: white;
 }
 
 .header {
