@@ -1,62 +1,62 @@
 @font-face {
-  font-family: HelveticaNeueCyr;
-  src: url(../fonts/HelveticaNeueCyr-Roman.woff2),
-    url(../fonts/HelveticaNeueCyr-Regular.woff);
+  font-family: Tilda-Sans;
+  src: url(../fonts/tilda-sans_light.woff2),
+    url(../fonts/tilda-sans_light.woff);
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Tilda-Sans;
+  src: url(../fonts/tilda-sans_regular.woff2),
+    url(../fonts/tilda-sans_regular.woff);
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: HelveticaNeueCyr;
-  src: url(../fonts/HelveticaNeueCyr-Medium.woff2),
-    url(../fonts/HelveticaNeueCyr-Medium.woff);
+  font-family: Tilda-Sans;
+  src: url(../fonts/tilda-sans_medium.woff2),
+    url(../fonts/tilda-sans_medium.woff);
   font-weight: 500;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: HelveticaNeueCyr;
-  src: url(../fonts/HelveticaNeueCyr-SemiBold.woff2),
-    url(../fonts/HelveticaNeueCyr-SemiBold.woff);
+  font-family: Tilda-Sans;
+  src: url(../fonts/tilda-sans_semibold.woff2),
+    url(../fonts/tilda-sans_semibold.woff);
   font-weight: 600;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: HelveticaNeueCyr;
-  src: url(../fonts/HelveticaNeueCyr-Bold.woff2),
-    url(../fonts/HelveticaNeueCyr-Bold.woff);
+  font-family: Tilda-Sans;
+  src: url(../fonts/tilda-sans_bold.woff2),
+    url(../fonts/tilda-sans_bold.woff);
   font-weight: 700;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: HelveticaNeueCyr;
-  src: url(../fonts/HelveticaNeueCyr-Black.woff2),
-    url(../fonts/HelveticaNeueCyr-Black.woff);
-  font-weight: 700;
+  font-family: Tilda-Sans;
+  src: url(../fonts/tilda-sans_extra-bold.woff2),
+    url(../fonts/tilda-sans_extra-bold.woff);
+  font-weight: 800;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: FjallaOne;
-  src: url(../fonts/FjallaOne-Regular.woff2),
-    url(../fonts/FjallaOne-Regular.woff);
-  font-weight: 400;
+  font-family: Tilda-Sans;
+  src: url(../fonts/tilda-sans_black.woff2),
+    url(../fonts/tilda-sans_black.woff);
+  font-weight: 900;
   font-display: swap;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: Oswald;
-  src: url(../fonts/Oswald-Regular.woff2),
-    url(../fonts/Oswald-Regular.woff);
-  font-weight: 400;
-  font-display: swap;
-  font-style: italic;
+  font-style: normal;
 }

@@ -73,12 +73,12 @@
 
     (function () {
       var navBtn = document.querySelectorAll('.nav__btn'),
-        navActive = document.getElementsByClassName('active');
+        active = document.getElementsByClassName('active');
 
       Array.from(navBtn).forEach(function (item, i, navBtn) {
         item.addEventListener('click', function (e) {
-          if (navActive.length > 0 && navActive[0] !== this)
-            navActive[0].classList.remove('active');
+          if (active.length > 0 && active[0] !== this)
+            active[0].classList.remove('active');
 
           this.classList.toggle('active');
         });
