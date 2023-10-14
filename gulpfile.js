@@ -80,7 +80,7 @@ function cleanDist() {
 function building() {
   return src([
     'app/css/style.css',
-    'app/images/*.*',
+    'app/images/**/*.*',
     'app/fonts/*.*',
     'app/js/main.js',
     'app/libs/**/*.*',
