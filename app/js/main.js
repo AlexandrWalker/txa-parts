@@ -119,6 +119,83 @@
       quantity.innerHTML = obj.length;
     })();
 
+
+
+
+
+
+
+
+
+
+
+    (function () {
+      var collectionLink = document.querySelectorAll('.collection__link'),
+        open = document.getElementsByClassName('open'),
+        productName = document.querySelectorAll('product__name'),
+        productDesc = document.getElementById('product__desc');
+
+      Array.from(collectionLink).forEach(function (itemLink, i, collectionLink) {
+        itemLink.addEventListener('click', function (e) {
+          if (open.length > 0 && open[0] !== this)
+            open[0].classList.remove('open');
+
+          this.classList.toggle('open');
+
+          var value_one = $('.field_one').val(); /*Берем значение из поля_1*/
+          var click_one = 1; /*Счетчик*/
+
+          localStorage.setItem("value_ls", this.val()); /*Заносим значение поля_1 в хранилище*/
+          localStorage.setItem("value_click", click_one); /*Заносим значение счетчика в хранилище*/
+
+          document.location.href = '../product.html'; /*переходим на страницу, где будем получать переданное значение*/
+
+          // var attribute = this.getAttribute('name');
+
+          // console.log(attribute);
+
+          // productName.textContent = attribute;
+
+        });
+
+        var value_two = localStorage.getItem("value_ls"); /*Получаем значение поля_1 из хранилища*/
+        var click_two = localStorage.getItem("value_click"); /*Получаем значение счетчика из хранилища*/
+
+        if (click_two == 1) { /*Проверяем значение счетчика. Если был клик, а значит, поле передалось не пустое, то...*/
+          $('.field_two').val(value_two); /*Заносим значение поля_1*/
+          localStorage.removeItem("value_ls"); /*Удаляем контейнер, где хранилось значение поля_1*/
+          localStorage.removeItem("value_click"); /*Удаляем контейнер, где хранилось значение счетчика*/
+          localStorage.clear(); /*Очищаем хранилище*/
+        } else { } /*...Если не было клика, то ничего не происходит*/
+
+      });
+    })();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     paginationItem();
 
   });
