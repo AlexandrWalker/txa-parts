@@ -83,39 +83,61 @@
   </symbol>
 </svg>
 <main class="main">
-  <div class="contact">
+  <div class="product">
     <div class="container">
-      <div class="contact__inner">
-        <h2 class="contact__title">
-          Если у вас есть общие вопросы или чтобы стать клиентом TXA, заполните форму ниже.
-        </h2>
+      <div class="product__inner">
+        <div class="product__content">
 
-        <form method="post" action="" class="contact__form">
-
-          <div class="contact__form-item contact__form-name">
-            <label for="ContactForm-name">Имя</label>
-            <input type="text" id="ContactForm-name" name="contact[name]" value="">
+          <div class="product__slider">
+            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="product__images" loading="lazy"
+                    src="images/Caterpillar/Caterpillar C12 H-1442948/Caterpillar C12 H-1442948 1.webp"
+                    alt="product-image">
+                </div>
+                <div class="swiper-slide">
+                  <img class="product__images" loading="lazy"
+                    src="images/Caterpillar/Caterpillar C12 H-1442948/Caterpillar C12 H-1442948 2.webp"
+                    alt="product-image">
+                </div>
+                <div class="swiper-slide">
+                  <img class="product__images" loading="lazy"
+                    src="images/Caterpillar/Caterpillar C12 H-1442948/Caterpillar C12 H-1442948 3.webp"
+                    alt="product-image">
+                </div>
+              </div>
+            </div>
+            <div thumbsSlider="" class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="product__images" loading="lazy"
+                    src="images/Caterpillar/Caterpillar C12 H-1442948/Caterpillar C12 H-1442948 1.webp"
+                    alt="product-image">
+                </div>
+                <div class="swiper-slide">
+                  <img class="product__images" loading="lazy"
+                    src="images/Caterpillar/Caterpillar C12 H-1442948/Caterpillar C12 H-1442948 2.webp"
+                    alt="product-image">
+                </div>
+                <div class="swiper-slide">
+                  <img class="product__images" loading="lazy"
+                    src="../images/Caterpillar/Caterpillar C12 H-1442948/Caterpillar C12 H-1442948 3.webp"
+                    alt="product-image">
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="contact__form-item contact__form-email">
-            <label for="ContactForm-email">Email <span aria-hidden="true">*</span></label>
-            <input type="email" id="ContactForm-email" name="contact[email]" autocorrect="off" autocapitalize="none"
-              value="" aria-required="true">
+          <div class="product__body">
+            <h3 class="product__name">Поршень двигателя для Caterpillar C12 H-1442948</h3>
+            <p class="product__desc">Поршень двигателя для Caterpillar C12 H-1442948</p>
           </div>
-
-          <div class="contact__form-item contact__form-phone">
-            <label for="ContactForm-phone">Номер телефона</label>
-            <input type="tel" id="ContactForm-phone" name="contact[phone]" pattern="[0-9\-]*" value="">
-          </div>
-
-          <div class="contact__form-item contact__form-message">
-            <label for="ContactForm-message">Сообщение</label>
-            <textarea rows="10" id="ContactForm-message" name="contact[body]"></textarea>
-          </div>
-
-          <input type="submit" class="btn contact__form-btn" value="Отправить">
-
-        </form>
+        </div>
+        <a class="btn btn--back" onclick="javascript:history.back(); return false;">
+          <img src="images/back.svg" alt="back" class="arrow-back">
+          Вернуться к запасным частям
+        </a>
       </div>
     </div>
   </div>

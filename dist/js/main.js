@@ -77,7 +77,7 @@
       };
     })();
 
-    var swiper = new Swiper(".hero-slider", {
+    var heroSlider = new Swiper(".hero-slider", {
       spaceBetween: 30,
       centeredSlides: true,
       autoplay: {
@@ -87,6 +87,22 @@
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
+      },
+    });
+
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      spaceBetween: 30,
+      slidesPerView: 3,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+
+    var swiper2 = new Swiper(".mySwiper2", {
+      loop: true,
+      spaceBetween: 10,
+      thumbs: {
+        swiper: swiper,
       },
     });
 

@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 
-  <link rel="stylesheet" href="libs/swiper-bundle.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <!-- <link rel="stylesheet" href="libs/swiper-bundle.min.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -89,21 +89,43 @@
         <div class="product__content">
 
           <div class="product__slider">
-            <div class="product__slider-for">
-              <img class="product__item"
-                src="../images/Caterpillar/Поршень двигателя для Caterpillar C12 H-1442948/Поршень двигателя для Caterpillar C12 H-1442948 1.webp"
-                alt="product-image">
+            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="product__images" loading="lazy"
+                    src="images/Caterpillar/Caterpillar C12 H-1442948/Caterpillar C12 H-1442948 1.webp"
+                    alt="product-image">
+                </div>
+                <div class="swiper-slide">
+                  <img class="product__images" loading="lazy"
+                    src="images/Caterpillar/Caterpillar C12 H-1442948/Caterpillar C12 H-1442948 2.webp"
+                    alt="product-image">
+                </div>
+                <div class="swiper-slide">
+                  <img class="product__images" loading="lazy"
+                    src="images/Caterpillar/Caterpillar C12 H-1442948/Caterpillar C12 H-1442948 3.webp"
+                    alt="product-image">
+                </div>
+              </div>
             </div>
-            <div class="product__slider-nav">
-              <img class="product__item"
-                src="../images/Caterpillar/Поршень двигателя для Caterpillar C12 H-1442948/Поршень двигателя для Caterpillar C12 H-1442948 1.webp"
-                alt="product-image">
-              <img class="product__item"
-                src="../images/Caterpillar/Поршень двигателя для Caterpillar C12 H-1442948/Поршень двигателя для Caterpillar C12 H-1442948 2.webp"
-                alt="product-image">
-              <img class="product__item"
-                src="../images/Caterpillar/Поршень двигателя для Caterpillar C12 H-1442948/Поршень двигателя для Caterpillar C12 H-1442948 3.webp"
-                alt="product-image">
+            <div thumbsSlider="" class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="product__images" loading="lazy"
+                    src="images/Caterpillar/Caterpillar C12 H-1442948/Caterpillar C12 H-1442948 1.webp"
+                    alt="product-image">
+                </div>
+                <div class="swiper-slide">
+                  <img class="product__images" loading="lazy"
+                    src="images/Caterpillar/Caterpillar C12 H-1442948/Caterpillar C12 H-1442948 2.webp"
+                    alt="product-image">
+                </div>
+                <div class="swiper-slide">
+                  <img class="product__images" loading="lazy"
+                    src="images/Caterpillar/Caterpillar C12 H-1442948/Caterpillar C12 H-1442948 3.webp"
+                    alt="product-image">
+                </div>
+              </div>
             </div>
           </div>
 
@@ -154,8 +176,8 @@
 </footer>
 </div>
 <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script defer src="libs/swiper-bundle.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!-- <script defer src="libs/swiper-bundle.min.js"></script> -->
+<script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script defer src="js/main.js"></script>
 </body>
 
