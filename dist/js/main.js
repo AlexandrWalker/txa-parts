@@ -158,7 +158,7 @@
         var click_two = localStorage.getItem("value_click"); /*Получаем значение счетчика из хранилища*/
 
         if (click_two == 1) { /*Проверяем значение счетчика. Если был клик, а значит, поле передалось не пустое, то...*/
-          $('.field_two').val(value_two); /*Заносим значение поля_1*/
+          $('.product__name').val(value_two); /*Заносим значение поля_1*/
           localStorage.removeItem("value_ls"); /*Удаляем контейнер, где хранилось значение поля_1*/
           localStorage.removeItem("value_click"); /*Удаляем контейнер, где хранилось значение счетчика*/
           localStorage.clear(); /*Очищаем хранилище*/
